@@ -2,9 +2,9 @@ package jana60;
 
 public class Indirizzo {
 	//ATTRIBUTI
-	String via;
-	String numero;
-	String città;
+	private String via;
+	private String numero;
+	private String città;
 	//COSTRUTTORE
 	public Indirizzo(String via, String numero, String città) {
 		super();
@@ -29,11 +29,11 @@ public class Indirizzo {
 		this.numero = numero;
 	}
 
-	public String getCittà() {
+	public String getCitta() {
 		return città;
 	}
 
-	public void setCittà(String città) {
+	public void setCitta(String città) {
 		this.città = città;
 	}
 	

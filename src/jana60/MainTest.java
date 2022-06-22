@@ -14,7 +14,7 @@ public class MainTest {
 		Persona[] persona = new Persona[indicePersona];
 		
 		//CREAZIONE CICLO FOR PER FARGLI RIPETERE L INSERIMENTO DEI DATI QUANTE VOLTE VUOLE L'UTENTE
-		for (int i = 0; i < 2 ; i++) {
+		for (int i = 0; i < persona.length ; i++) {
 			//creiamo variabile indicePersona che avanzera con l avanzare degli studenti cosi da stamparci poi l indice della persona
 			int indicePersonaTemp = i+1;
 			
@@ -41,10 +41,10 @@ public class MainTest {
 			String cittaTemp = scan.nextLine();
 			
 			Indirizzo indirizzo = new Indirizzo(viaTemp, numCivicoTemp, cittaTemp);
-			//Creiamo un istanza del contenitore della classe Persona che avanza con l'avanzare di [i] e 
+			//Creiamo un istanza del contenitore della classe Persona che avanza con riferimento [i] e 
 			//al suo interno gli diamo le variabili nome/cognome e indirizzo(che a suavolte al suo interno contiene via/numeroCivico/citta)
 			//al suo interno cosi da salvarle ogni volta in un nuovo contenitore all'interno della classe Persona
-			persona[i] new Persona(nomeTemp, cognomeTemp, indirizzo) ;
+			persona[i] = new Persona(nomeTemp, cognomeTemp, indirizzo) ;
 			
 			
 			
