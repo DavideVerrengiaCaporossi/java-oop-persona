@@ -8,6 +8,7 @@ public class MainTest {
 		//CREAZIONE SCANNER
 		Scanner scan = new Scanner(System.in);
 		//creiamo una variabile per far decidere la grandezza dell'arrey di Persona al utente
+		System.out.println("inserisci la quantita di persone ");
 				int indicePersona = Integer.parseInt(scan.nextLine());
 				
 		//CREO UN ARREY DI PERSONA CON LA CLASSE PERSONA
@@ -46,24 +47,24 @@ public class MainTest {
 			//al suo interno cosi da salvarle ogni volta in un nuovo contenitore all'interno della classe Persona
 			persona[i] = new Persona(nomeTemp, cognomeTemp, indirizzo) ;
 			
-			
-			
-			
-			
+		}
+		// for dove vado a far stampare tutti i dati inerenti ai dati della persona  
+		for (int i = 0; i < persona.length; i++) {
+			System.out.println("Persona" + (i+1) + "è " + persona[i].getNome() + " " + persona[i].getCognome());
+		
 		}
 		
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
 		scan.close();
-
 	}
+		
+		
+		
+		
+		
+		
+		
 
 }
